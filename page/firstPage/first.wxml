@@ -1,3 +1,5 @@
+<include src="../templates/header.wxml"></include>
+<view class="body">
 <!--page/firstPage/first.wxml-->
 <text>{{message}}</text>
 <button type="primary" bindtap="clickMe">点我改变内容</button>
@@ -7,3 +9,6 @@
 <view wx:else>{{message}}2</view>
 <!-- for -->
 <view wx:for="{{news}}" wx:for-index="idx" wx:for-item="itemName"> {{idx}}:{{itemName}}</view>
+</view>
+<import src="../templates/footer" />
+<template is="footer1" data="{{text:'哈哈'}}"></template> 
