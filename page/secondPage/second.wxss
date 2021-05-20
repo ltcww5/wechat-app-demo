@@ -1,0 +1,17 @@
+/* page/secondPage/second.wxss */
+.view1{
+  color: rgb(87, 29, 29);
+  background-color: antiquewhite;
+  height: 200px;
+}
+
+.view2{
+  color: rgb(37, 21, 182);
+  background-color: rgb(243, 152, 33);
+  height: 100px;
+}
+
+.view3{
+  color: rgb(52, 199, 33);
+  background-color: rgb(218, 19, 19)
+}

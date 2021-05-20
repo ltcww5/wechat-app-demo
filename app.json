@@ -1,5 +1,6 @@
 {
   "pages": [
+    "page/secondPage/second",
     "page/firstPage/first",
     "page/component/index",
     "page/component/navigation-pages/controller/controller",
