@@ -67,8 +67,9 @@ Page({
   /**
    * view1Click
    */
-  view1Click: function () {
+  view1Click: function (event) {
     console.log("view1");
+    console.log(event);
   },
 
   /**
