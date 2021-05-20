@@ -73,7 +73,7 @@
         "pagePath": "page/component/index",
         "iconPath": "image/wechat.png",
         "selectedIconPath": "image/wechatHL.png",
-        "text": "组件1"
+        "text": "组件"
       },
       {
         "pagePath": "page/API/index/index",
