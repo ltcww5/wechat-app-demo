@@ -1,0 +1,17 @@
+/* page/kuaidi/kuaidiquery.wxss */
+.weui-input{
+  border: 1px solid red;
+  width: 390rpx;
+  margin: 5%;
+  float: left;
+}
+
+.queryClass{
+width: 190rpx;
+float: left;
+height: 70rpx;
+line-height: 30px;
+/* vertical-align:middle; */
+text-align: center;
+margin-top:31rpx ;
+}
