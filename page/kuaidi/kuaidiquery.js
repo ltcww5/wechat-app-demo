@@ -5,7 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    responseText:"无"
+    responseText:"无",
+    inputValue:null
   },
 
   /**
@@ -65,8 +66,9 @@ Page({
   },
   queryExpressInfo:function(){
 var $this=this;
-this.getExpressInfo("",function(data){
-  $this.setData({responseText:"有"});
+var inv=this.data.inputValue;
+this.getExpressInfo(inv,function(data){
+  $this.setData({responseText: JSON.stringify(data) });
 });
   },
   /**
@@ -74,10 +76,11 @@ this.getExpressInfo("",function(data){
    */
   getExpressInfo:function(orderId,bf){
     wx.request({
-      // url: 'https://tht.yntravelsky.net.cn/desktopapi/api/AirShow/GetAirShowData', //仅为示例，并非真实的接口地址
-      url: 'https://www.baidu.com', //仅为示例，并非真实的接口地址
+      url: 'https://tht.yntravelsky.net.cn/desktopapi/api/AirShow/GetAirShowData', //仅为示例，并非真实的接口地址
+      // url: 'https://www.baidu.com', //仅为示例，并非真实的接口地址
+      method: 'post',
       data:JSON.stringify({
-        IdentityCode: 'aocims.deqing'
+        IdentityCode: orderId
       }) ,
       header: {
         'content-type': 'application/json' // 默认值
@@ -87,5 +90,9 @@ this.getExpressInfo("",function(data){
          bf(res.data);
       }
     })
+  },
+  input:function(e){
+    this.setData({inputValue:e.detail.value});
   }
+
 })
