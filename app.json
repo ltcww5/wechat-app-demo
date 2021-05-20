@@ -1,5 +1,6 @@
 {
   "pages": [
+    "page/firstPage/first",
     "page/component/index",
     "page/component/navigation-pages/controller/controller",
     "page/component/navigation-pages/form/form",
@@ -80,6 +81,12 @@
         "iconPath": "image/wechat.png",
         "selectedIconPath": "image/wechatHL.png",
         "text": "接口"
+      },
+      {
+        "pagePath": "page/API/index/index",
+        "iconPath": "image/wechat.png",
+        "selectedIconPath": "image/wechatHL.png",
+        "text": "测试"
       }
     ]
   },
