@@ -63,12 +63,19 @@ Page({
   onShareAppMessage: function () {
 
   },
+  queryExpressInfo:function(){
+var $this=this;
+this.getExpressInfo("",function(data){
+  $this.setData({responseText:"有"});
+});
+  },
   /**
    * 获取快递单号
    */
-  getExpressInfo:function(orderId){
+  getExpressInfo:function(orderId,bf){
     wx.request({
-      url: 'https://tht.yntravelsky.net.cn/desktopapi/api/AirShow/GetAirShowData', //仅为示例，并非真实的接口地址
+      // url: 'https://tht.yntravelsky.net.cn/desktopapi/api/AirShow/GetAirShowData', //仅为示例，并非真实的接口地址
+      url: 'https://www.baidu.com', //仅为示例，并非真实的接口地址
       data:JSON.stringify({
         IdentityCode: 'aocims.deqing'
       }) ,
@@ -76,8 +83,8 @@ Page({
         'content-type': 'application/json' // 默认值
       },
       success (res) {
-        console.log(res.data)
-        this.setData({responseText:res.data})
+         console.log(res.data)
+         bf(res.data);
       }
     })
   }

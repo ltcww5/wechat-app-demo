@@ -1,5 +1,5 @@
 <view>
   <input class="weui-input" auto-focus placeholder="输入快递单号"/>
-  <button type="primary" class="queryClass" bindtap="getExpressInfo">查询</button>
+  <button type="primary" class="queryClass" bindtap="queryExpressInfo">查询</button>
 </view>
 <text>{{responseText}}</text>
