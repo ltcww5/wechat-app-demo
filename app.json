@@ -1,6 +1,6 @@
 {
   "pages": [ 
-    "page/kuaidi/kuaidiquery",
+    "page/test/test",
     "page/component/index",
     "page/secondPage/second",
     "page/firstPage/first",
