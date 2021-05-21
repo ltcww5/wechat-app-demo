@@ -6,7 +6,9 @@ Page({
    */
   data: {
     responseText:"无",
-    inputValue:null
+    inputValue:null,
+    airportFlight:[],
+    isSuccess:false
   },
 
   /**
@@ -84,6 +86,15 @@ this.getExpressInfo(inv,function(data){
       timingFunc: 'easeIn'
     }
   })
+
+  if(data.IsError)
+  {
+    $this.setData({isSuccess:false });
+  }else
+  {
+    $this.setData({isSuccess:true });
+    $this.setData({airportFlight:data.Data });
+  }
   $this.setData({responseText: JSON.stringify(data) });
 });
   },
@@ -110,5 +121,4 @@ this.getExpressInfo(inv,function(data){
   input:function(e){
     this.setData({inputValue:e.detail.value});
   }
-
 })

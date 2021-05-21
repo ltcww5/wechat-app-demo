@@ -2,4 +2,11 @@
   <input class="weui-input" auto-focus placeholder="查询机场" bindinput="input"/>
   <button type="primary" class="queryClass" bindtap="queryExpressInfo">查询</button>
 </view>
-<text>{{responseText}}</text>
+
+
+<view wx:if="{{isSuccess}}">
+  <view wx:for="{{airportFlight}}" >{{item.FlightMissionName}}</view>
+</view>
+<view wx:else>
+<text class="noClass">{{responseText}}</text>
+</view>
