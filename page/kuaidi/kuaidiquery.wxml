@@ -1,11 +1,13 @@
-<view>
+<view class="head">
   <input class="weui-input" auto-focus placeholder="查询机场" bindinput="input"/>
   <button type="primary" class="queryClass" bindtap="queryExpressInfo">查询</button>
 </view>
 
 
 <view wx:if="{{isSuccess}}">
-  <view wx:for="{{airportFlight}}" >{{item.FlightMissionName}}</view>
+  <view wx:for="{{airportFlight}}" >
+  {{item.Airline}} {{item.OrgAirport}}-{{item.DestAirport}} {{item.FlightNo}}{{item.FlightMissionName}}
+  </view>
 </view>
 <view wx:else>
 <text class="noClass">{{responseText}}</text>
