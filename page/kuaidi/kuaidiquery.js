@@ -68,6 +68,22 @@ Page({
 var $this=this;
 var inv=this.data.inputValue;
 this.getExpressInfo(inv,function(data){
+  wx.showToast({
+    title: '成功',
+    icon: 'success',
+    duration: 2000
+  })
+  wx.setNavigationBarTitle({
+    title: '获取数据成功'
+  })
+  wx.setNavigationBarColor({
+    frontColor: '#ffffff',
+    backgroundColor: '#ff0000',
+    animation: {
+      duration: 400,
+      timingFunc: 'easeIn'
+    }
+  })
   $this.setData({responseText: JSON.stringify(data) });
 });
   },

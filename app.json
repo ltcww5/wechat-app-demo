@@ -1,7 +1,7 @@
 {
   "pages": [ 
-    "page/kuaidi/kuaidiquery",
     "page/component/index",
+    "page/kuaidi/kuaidiquery",
     "page/secondPage/second",
     "page/firstPage/first",
     "page/component/navigation-pages/controller/controller",

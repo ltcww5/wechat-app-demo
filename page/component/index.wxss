@@ -89,7 +89,7 @@
 .widget__line{
     content: " ";
     position: absolute;
-    left: 20px;
+    left: 10px;
     bottom: 0;
     right: 20px;
     height: 1rpx;
