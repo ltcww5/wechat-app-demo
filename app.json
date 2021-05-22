@@ -1,5 +1,6 @@
 {
-  "pages": [ 
+  "pages": [
+    "page/flex/flexlayout",
     "page/test/test",
     "page/component/index",
     "page/secondPage/second",

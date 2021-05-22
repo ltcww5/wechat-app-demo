@@ -1,0 +1,21 @@
+.container{
+    background-color: rgb(90, 14, 153);
+    width: 600rpx;
+    height: 300rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content:start;
+    /* flex-wrap: wrap; */
+    /* align-items:center; */
+}
+
+.item{
+    background-color: rgb(89, 99, 6);
+    width: 100rpx;
+    height: 100rpx;
+    border: 1px solid red;
+    flex-grow: 1;
+    flex-shrink: 1; /*空间不足等比缩小*/
+    flex-basis: 200rpx;  /*主轴上占用空间 */
+    flex:1 1 250;
+}
