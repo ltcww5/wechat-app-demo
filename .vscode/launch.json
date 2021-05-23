@@ -1,0 +1,10 @@
+{
+    "configurations": [
+        {
+            "type": "pwa-chrome",
+            "name": "http://component/index",
+            "request": "launch",
+            "url": "http://component/index"
+        }
+    ]
+}

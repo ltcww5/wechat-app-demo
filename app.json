@@ -1,8 +1,8 @@
 {
   "pages": [
+    "page/component/index",
     "page/flex/flexlayout",
     "page/test/test",
-    "page/component/index",
     "page/secondPage/second",
     "page/firstPage/first",
     "page/component/navigation-pages/controller/controller",
