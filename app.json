@@ -1,9 +1,9 @@
 {
   "pages": [ 
-    "page/test/test",
     "page/component/index",
-    "page/secondPage/second",
     "page/firstPage/first",
+    "page/secondPage/second",
+    "page/test/test",
     "page/component/navigation-pages/controller/controller",
     "page/component/navigation-pages/form/form",
     "page/component/navigation-pages/media/media",
